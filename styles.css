@@ -182,3 +182,32 @@ h3 {
     width: 100%;
   }
 }
+
+/* ==========================================================
+   DCPF Architecture Figure
+   ========================================================== */
+
+.architecture-figure {
+
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+
+}
+
+.architecture-figure img {
+
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.architecture-figure figcaption {
+
+  margin-top: 1rem;
+  color: #c6d0d6;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+}
