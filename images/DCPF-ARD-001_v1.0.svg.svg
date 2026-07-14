@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     viewBox="0 0 900 1280"
+     role="img"
+     aria-labelledby="dcpfTitle dcpfDesc">
+
+  <title id="dcpfTitle">Distributed Cognitive Prompting Framework for AI Collaboration (DCPF) Architectural Relationship Diagram</title>
+
+  <desc id="dcpfDesc">
+    Official DCPF architectural relationship diagram. Governance forms the boundary
+    around the Research, Knowledge, and Runtime Frameworks. Research contributes to
+    the Knowledge Framework and produces Research Outputs. The Knowledge Framework
+    informs the Runtime Framework, which produces Project Outputs. Figure identifier
+    DCPF-ARD-001, Version 1.0.
+  </desc>
+
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="https://dcpfai.org">
+        <dc:title>Distributed Cognitive Prompting Framework for AI Collaboration (DCPF) Architectural Relationship Diagram</dc:title>
+        <dc:identifier>DCPF-ARD-001</dc:identifier>
+        <dcterms:hasVersion>1.0</dcterms:hasVersion>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Ralph A. Perez, Jr.</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>Copyright © 2026 Ralph A. Perez, Jr.</dc:rights>
+        <dc:rightsHolder>
+          <cc:Agent>
+            <dc:title>Ralph A. Perez, Jr.</dc:title>
+          </cc:Agent>
+        </dc:rightsHolder>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:subject>Distributed Cognitive Prompting Framework for AI Collaboration</dc:subject>
+        <dc:subject>DCPF</dc:subject>
+        <dc:subject>AI collaboration</dc:subject>
+        <dc:subject>Research Framework</dc:subject>
+        <dc:subject>Knowledge Framework</dc:subject>
+        <dc:subject>Runtime Framework</dc:subject>
+        <dc:subject>Governance Framework</dc:subject>
+        <dc:subject>Architectural Relationship Diagram</dc:subject>
+        <dc:description>
+          A visual representation of the architectural relationships among the
+          Research, Knowledge, Runtime, and Governance Frameworks and their outputs.
+        </dc:description>
+        <dc:source>https://dcpfai.org</dc:source>
+        <dcterms:isReferencedBy rdf:resource="https://doi.org/10.5281/zenodo.21306265"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#bfd4df"/>
+    </marker>
+
+    <style>
+      .diagram-bg { fill: #234a5f; }
+      .governance-ring {
+        fill: none;
+        stroke: #8fb5c8;
+        stroke-width: 6;
+      }
+      .governance-label-bg { fill: #234a5f; }
+      .framework-box {
+        fill: #17242c;
+        stroke: #7f9aa8;
+        stroke-width: 3;
+      }
+      .knowledge-box {
+        fill: #17242c;
+        stroke: #a3bdca;
+        stroke-width: 4;
+      }
+      .research-output-box {
+        fill: #1a2b34;
+        stroke: #78a7bd;
+        stroke-width: 3;
+      }
+      .project-output-box {
+        fill: #1a2b34;
+        stroke: #b6a77b;
+        stroke-width: 3;
+      }
+      .connector {
+        fill: none;
+        stroke: #bfd4df;
+        stroke-width: 5;
+        stroke-linecap: round;
+        marker-end: url(#arrowhead);
+      }
+      .main-title {
+        fill: #f4f8fa;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-anchor: middle;
+      }
+      .acronym {
+        fill: #c7d6de;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        text-anchor: middle;
+      }
+      .figure-title {
+        fill: #f4f8fa;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        font-weight: 600;
+        text-anchor: middle;
+      }
+      .governance-text {
+        fill: #f4f8fa;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-anchor: middle;
+      }
+      .framework-title {
+        fill: #f4f8fa;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-anchor: middle;
+      }
+      .framework-subtitle {
+        fill: #c7d6de;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        text-anchor: middle;
+      }
+      .output-title {
+        fill: #f4f8fa;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-anchor: middle;
+      }
+      .internal-mark {
+        fill: #8fb5c8;
+        opacity: 0.72;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-anchor: end;
+      }
+      .arc-site {
+        fill: #9fb9c6;
+        opacity: 0.55;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        letter-spacing: 1.2px;
+        text-anchor: middle;
+      }
+      .footer-rule {
+        stroke: #6f91a2;
+        stroke-width: 2;
+        opacity: 0.8;
+      }
+      .footer-primary {
+        fill: #f4f8fa;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-anchor: middle;
+      }
+      .footer-secondary {
+        fill: #c7d6de;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-anchor: middle;
+      }
+      .footer-license {
+        fill: #aebfc8;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Dark, low-glare background -->
+  <rect class="diagram-bg" x="0" y="0" width="900" height="1280" rx="32"/>
+
+  <!-- Official title block -->
+  <text class="main-title" x="450" y="46">Distributed Cognitive Prompting Framework</text>
+  <text class="main-title" x="450" y="82">for AI Collaboration</text>
+  <text class="acronym" x="450" y="114">(DCPF)</text>
+  <text class="figure-title" x="450" y="147">Architectural Relationship Diagram</text>
+
+  <!-- Governance boundary -->
+  <circle class="governance-ring" cx="450" cy="570" r="350"/>
+
+  <!-- Governance label set into the upper arc -->
+  <rect class="governance-label-bg" x="285" y="188" width="330" height="58" rx="20"/>
+  <text class="governance-text" x="450" y="228">GOVERNANCE</text>
+
+  <!-- Research Framework -->
+  <rect class="framework-box" x="245" y="305" width="410" height="120" rx="24"/>
+  <text class="framework-title" x="450" y="358">Research Framework</text>
+  <text class="framework-subtitle" x="450" y="393">Generates evidence and findings</text>
+
+  <!-- Research to Knowledge -->
+  <path class="connector" d="M 450 425 L 450 490"/>
+
+  <!-- Knowledge Framework -->
+  <rect class="knowledge-box" x="205" y="505" width="490" height="140" rx="26"/>
+  <text class="framework-title" x="450" y="565">Knowledge Framework</text>
+  <text class="framework-subtitle" x="450" y="601">Persistent structured repository</text>
+
+  <!-- Knowledge to Runtime -->
+  <path class="connector" d="M 450 645 L 450 710"/>
+
+  <!-- Runtime Framework -->
+  <rect class="framework-box" x="245" y="725" width="410" height="120" rx="24"/>
+  <text class="framework-title" x="450" y="778">Runtime Framework</text>
+  <text class="framework-subtitle" x="450" y="813">Guides execution and outputs</text>
+
+  <!-- Research Outputs -->
+  <path class="connector" d="M 655 365 L 705 365"/>
+  <rect class="research-output-box" x="720" y="305" width="150" height="120" rx="22"/>
+  <text class="output-title" x="795" y="352">
+    <tspan x="795" dy="0">Research</tspan>
+    <tspan x="795" dy="32">Outputs</tspan>
+  </text>
+
+  <!-- Runtime to Project Outputs -->
+  <path class="connector" d="M 450 845 L 450 950"/>
+  <rect class="project-output-box" x="270" y="970" width="360" height="120" rx="24"/>
+  <text class="output-title" x="450" y="1040">Project Outputs</text>
+
+  <!-- Internal ownership marks -->
+  <text class="internal-mark" x="690" y="874">DCPF-ARD-001</text>
+  <text class="arc-site" x="450" y="904">dcpfai.org</text>
+
+  <!-- Persistent visible signature footer -->
+  <line class="footer-rule" x1="90" y1="1125" x2="810" y2="1125"/>
+
+  <text class="footer-primary" x="450" y="1160">
+    Figure ID: DCPF-ARD-001 · Version 1.0
+  </text>
+
+  <text class="footer-secondary" x="450" y="1194">
+    Official diagram for the Distributed Cognitive Prompting Framework
+  </text>
+
+  <text class="footer-secondary" x="450" y="1222">
+    for AI Collaboration (DCPF) · Ralph A. Perez, Jr. · dcpfai.org
+  </text>
+
+  <text class="footer-license" x="450" y="1252">
+    © 2026 Ralph A. Perez, Jr. · Licensed under CC BY 4.0
+  </text>
+</svg>
