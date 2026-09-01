@@ -666,7 +666,7 @@ pre {
   color: #8998A3;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 920px) {
   .primary-nav {
     display: none;
   }
