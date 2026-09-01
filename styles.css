@@ -339,6 +339,22 @@ summary:focus-visible {
   margin-top: 0;
 }
 
+.code-block {
+  max-width: var(--reading-width);
+  padding: 1.1rem 1.25rem;
+  margin: 1.25rem 0;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.94rem;
+  overflow-wrap: anywhere;
+}
+
+.code-block p {
+  margin: 0;
+}
+
 .callout {
   max-width: var(--reading-width);
   padding: 1.05rem 1.15rem;
