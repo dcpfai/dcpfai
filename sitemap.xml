@@ -51,4 +51,11 @@
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://dcpfai.org/learn-dcpf/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
