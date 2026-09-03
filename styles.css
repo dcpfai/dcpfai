@@ -350,7 +350,7 @@ summary:focus-visible {
 
 .section,
 .content-section {
-  padding: clamp(2.7rem, 6vw, 4.6rem) 0;
+  padding: clamp(2.1rem, 4.7vw, 3.6rem) 0;
 }
 
 .section.alternate,
@@ -461,7 +461,8 @@ summary:focus-visible {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.15rem;
+  column-gap: 1.15rem;
+  row-gap: 0.9rem;
   margin-top: 1.5rem;
 }
 
@@ -732,6 +733,11 @@ pre {
     grid-template-columns: 1fr;
   }
 
+  .framework-grid,
+  .card-grid {
+    row-gap: 0.95rem;
+  }
+
   .button-row {
     flex-direction: column;
   }
@@ -750,7 +756,7 @@ pre {
 
   .section,
   .content-section {
-    padding: 2.7rem 0;
+    padding: 2.25rem 0;
   }
 
   .utility-inner {
