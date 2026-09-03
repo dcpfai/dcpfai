@@ -536,6 +536,30 @@ summary:focus-visible {
   font-weight: 900;
 }
 
+.compact-prompt-list {
+  max-width: var(--reading-width);
+  margin: 1.3rem 0 0;
+  padding-left: 1.7rem;
+}
+
+.compact-prompt-list > li {
+  margin-bottom: 1.35rem;
+  padding-left: 0.35rem;
+}
+
+.compact-prompt-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.compact-prompt-list strong {
+  color: var(--heading);
+  font-weight: 800;
+}
+
+.compact-prompt-list p {
+  margin: 0.3rem 0 0;
+}
+
 .guiding-question {
   display: block;
   margin-top: 0.25rem;
